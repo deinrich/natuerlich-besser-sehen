@@ -8,42 +8,42 @@
     <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
-<body class="w-screen min-h-min h-screen text-center p-1 bg-linear-to-b from-amber-300 to-amber-600">
+<body class="relative w-screen min-h-min h-screen text-center p-1 bg-linear-to-b from-amber-300 to-amber-600">
 
     <div class="self-center mb-6">
-        <p class="text-3xl font-bold">
+        <p class="text-xl md:text-3xl font-bold">
             <span class="text-green-600">Natürlich</span>
             <span class="text-blue-700">Besser</span>
             <span class="text-red-700">Sehen</span>
-            <span class="text-xl text-black">Silvia Pintér</span>
+            <span class="text-sm md:text-xl text-black">Silvia Pintér</span>
         </p>
     </div>
 
-    <div class="grid grid-cols-12 mt-8">
-        <div class="col-start-3 col-span-2 ml-3">
-            <div class="flex flex-col">
-                <a href="src/pages/angebot.html" target="_self"
-                    class="text-left text-lg text-blue-950 hover:text-blue-800">Angebote</a>
-                <a href="src/pages/kursorte.html" target="_self"
-                    class="text-left text-lg text-blue-950 hover:text-blue-800">Kursorte</a>
-                <a href="src/pages/silvia-pinter.html" target="_self"
-                    class="text-left text-lg text-blue-950 hover:text-blue-800">Silvia Pintér</a>
-                <a href="src/pages/kontakt.html" target="_self"
-                    class="text-left text-lg text-blue-950 hover:text-blue-800">Kontakt/Impressum</a>
+    <div class="grid grid-cols-12 my-8 mx-2">
+        <div class="col-span-5 md:col-start-3 md:col-span-2 ml-3">
+            <div class="flex flex-col gap-1">
+                <a href="src/pages/angebot.html" target="_self" class="menu-link">Angebote</a>
+                <a href="src/pages/kursorte.html" target="_self" class="menu-link">Kursorte</a>
+                <a href="src/pages/silvia-pinter.html" target="_self" class="menu-link">Silvia Pintér</a>
+                <a href="src/pages/kontakt.html" target="_self" class="menu-link">Kontakt/Impressum</a>
                 <img src="src/images/wanderer.gif" alt="Augen-Menschchen wandert"
-                    class="mt-8 max-h-28 max-w-28">
+                    class="mt-8 max-h-20 max-w-20 md:max-h-28 md:max-w-28">
             </div>
         </div>
-        <div class="col-span-4">
+
+        <div class="col-span-7 md:col-span-4 mr-2">
             <img src="src/images/trees-8510912_640.jpg" alt="Berglandschaft" class="self-center rounded-lg shadow-lg">
         </div>
-        <div class="col-span-3"></div>
+        <div class="md:col-span-3"></div>
 
-        <div class="col-span-12 mt-3">
-            <p> zu meiner Systemische Kniseologie Webseite <br> <a href="www.systemische-kniseologie.net"
-                    class="text-[18px] text-blue-950 hover:text-blue-800"
-                    target="_blank">www.systemische-kniseologie.net</a></p>
-        </div>
+    </div>
+
+    <div class="absolute bottom-1 w-screen flex justify-center items-center">
+        <p class="text-xs md:text-sm align-bottom"> zu meiner Systemische Kniseologie Webseite <br> <a
+                href="www.systemische-kniseologie.net" class="text-xs md:text-sm text-blue-950 hover:text-blue-800"
+                target="_blank">www.systemische-kniseologie.net</a>
+        </p>
+    </div>
     </div>
 
 </body>
