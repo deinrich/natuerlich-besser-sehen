@@ -19,13 +19,101 @@
         </p>
     </div>
 
+
+    <nav class="relative z-10 top-0">
+        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+                class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                <li>
+                    Startseite
+                    <!-- <a href="#" class="block py-2 px-3 menu-link" aria-current="page">Startseite</a> -->
+                </li>
+                <li class="group">
+                    Angebot
+
+                    <div id="dropdownOffer"
+                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Termine</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Kursorte</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Ausbildung</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Firmentraining</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Über mich
+                    <!--  <a href="#" class="block py-2 px-3 menu-link">Über mich</a> -->
+                </li>
+
+                <li class="group">
+                    Media
+
+                    <div id="dropdownMedia"
+                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Publikationen</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Presse</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Links</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="group">
+                    Kontakt
+
+                    <div id="dropdownContact"
+                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Anmeldung</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">AGB</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 menu-link">Datenschutz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li>
+                    Systemische Kniseologie
+                    <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
     <div class="grid grid-cols-12 my-8 mx-2">
         <div class="col-span-5 md:col-start-3 md:col-span-2 ml-3">
             <div class="flex flex-col gap-1">
-                <a href="src/pages/angebot.html" target="_self" class="menu-link">Angebote</a>
-                <a href="src/pages/kursorte.html" target="_self" class="menu-link">Kursorte</a>
-                <a href="src/pages/silvia-pinter.html" target="_self" class="menu-link">Silvia Pintér</a>
-                <a href="src/pages/kontakt.html" target="_self" class="menu-link">Kontakt/Impressum</a>
                 <img src="src/images/wanderer.gif" alt="Augen-Menschchen wandert"
                     class="mt-8 max-h-20 max-w-20 md:max-h-28 md:max-w-28">
             </div>
@@ -36,14 +124,6 @@
         </div>
         <div class="md:col-span-3"></div>
 
-    </div>
-
-    <div class="absolute bottom-1 w-screen flex justify-center items-center">
-        <p class="text-xs md:text-sm align-bottom"> zu meiner Systemische Kniseologie Webseite <br> <a
-                href="www.systemische-kniseologie.net" class="text-xs md:text-sm text-blue-950 hover:text-blue-800"
-                target="_blank">www.systemische-kniseologie.net</a>
-        </p>
-    </div>
     </div>
 
 </body>
