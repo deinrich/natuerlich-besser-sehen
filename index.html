@@ -7,6 +7,7 @@
     <title>Natuerlich besser sehen</title>
     <link rel="stylesheet" href="src/styles/style.css">
 </head>
+<script src="src/scripts/navigation.js" defer></script>
 
 <body class="relative w-screen min-h-min h-screen text-center p-1 bg-linear-to-b from-amber-300 to-amber-600">
 
@@ -24,79 +25,77 @@
         <div class="w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
                 class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li>
+                <li class="cursor-pointer" onclick="window.location.href='index.html'">
                     Startseite
-                    <!-- <a href="#" class="block py-2 px-3 menu-link" aria-current="page">Startseite</a> -->
                 </li>
-                <li class="group">
+                <li class="dropdown-trigger" onclick="toggleOfferDropdown()">
                     Angebot
 
                     <div id="dropdownOffer"
-                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Termine</a>
+                                <a href="src/pages/termine.html" class="block px-4 py-2 menu-link">Termine</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Kursorte</a>
+                                <a href="src/pages/kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                <a href="src/pages/einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                <a href="src/pages/ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                <a href="src/pages/firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
-                <li>
+                <li class="cursor-pointer" onclick="window.location.href='src/pages/silvia-pinter.html'">
                     Über mich
-                    <!--  <a href="#" class="block py-2 px-3 menu-link">Über mich</a> -->
                 </li>
 
-                <li class="group">
+                <li class="dropdown-trigger" onclick="toggleMediaDropdown()">
                     Media
 
                     <div id="dropdownMedia"
-                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                <a href="src/pages/erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Publikationen</a>
+                                <a href="src/pages/publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Presse</a>
+                                <a href="src/pages/presse.html" class="block px-4 py-2 menu-link">Presse</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Links</a>
+                                <a href="src/pages/links.html" class="block px-4 py-2 menu-link">Links</a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
-                <li class="group">
+                <li class="dropdown-trigger" onclick="toggleContactDropdown()">
                     Kontakt
 
                     <div id="dropdownContact"
-                        class="absolute z-20 hidden group-hover:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400">
+                        class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                <a href="src/pages/anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                <a href="src/pages/kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">AGB</a>
+                                <a href="src/pages/agb.html" class="block px-4 py-2 menu-link">AGB</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                <a href="src/pages/datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
                             </li>
                         </ul>
                     </div>
