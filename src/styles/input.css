@@ -8,22 +8,40 @@
 
 @layer base {
     h1 {
-      font-size: var(--text-2xl);
+      font-size: var(--text-4xl);
     }
     h2 {
-      font-size: var(--text-xl);
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      margin-block: calc(var(--spacing) * 3);
     }
     h3 {
       font-size: var(--text-lg);
+      font-weight: 600;
+      margin-block: calc(var(--spacing) * 2);
+    }
+    h4 {
+      font-size: var(--text-base);
+      font-weight: 600;
+      margin-block: calc(var(--spacing) * 2);
     }
     a {
-      color: var(--color-blue-600);
+      color: var(--color-blue-950);
       text-decoration-line: underline;
+      cursor: pointer;
+    }
+    p {
+      font-size: var(--text-base);
+      margin-block: calc(var(--spacing) * 2); /* 0.5rem = 8px */
     }
   }
 
+body {
+  @apply relative w-screen min-h-min text-center p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
+}
+
 .menu-link {
-  @apply text-left text-xs md:text-sm text-blue-950 hover:text-blue-800;
+  @apply text-left text-xs md:text-sm hover:text-blue-800;
   text-decoration: none;
 }
 
@@ -37,4 +55,8 @@
 
 .dropdown-trigger {
   @apply cursor-pointer
+}
+
+.link {
+  @apply text-xs md:text-sm hover:text-blue-800;
 }

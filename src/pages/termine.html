@@ -10,30 +10,28 @@
 
 <script src="../scripts/navigation.js" defer></script>
 
-<body class="relative w-screen min-h-min h-screen text-center p-1 bg-linear-to-b from-amber-300 to-amber-600">
+<body">
 
     <div class="self-center mb-6">
         <p class="text-xl md:text-3xl font-bold">
-            <span class="text-green-600">Natürlich</span>
-            <span class="text-blue-700">Besser</span>
-            <span class="text-red-700">Sehen</span>
-            <span class="text-sm md:text-xl text-black">Silvia Pintér</span>
+            <span class="text-green-nbs">Natürlich</span>
+            <span class="text-blue-nbs">Besser</span>
+            <span class="text-rot-nbs">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
         </p>
     </div>
 
 
     <nav class="relative z-10 top-0">
         <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul
-                class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
                 <li class="cursor-pointer" onclick="window.location.href='../../index.html'">
                     Startseite
                 </li>
                 <li class="dropdown-trigger" onclick="toggleOfferDropdown()">
                     Angebot
 
-                    <div id="dropdownOffer"
-                        class="menu-dropdown">
+                    <div id="dropdownOffer" class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
                                 <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
@@ -61,11 +59,11 @@
                 <li class="dropdown-trigger" onclick="toggleMediaDropdown()">
                     Media
 
-                    <div id="dropdownMedia"
-                        class="menu-dropdown">
+                    <div id="dropdownMedia" class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
-                                <a href="erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                <a href="erfahrungsberichte.html"
+                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
                             </li>
                             <li>
                                 <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
@@ -83,8 +81,7 @@
                 <li class="dropdown-trigger" onclick="toggleContactDropdown()">
                     Kontakt
 
-                    <div id="dropdownContact"
-                        class="menu-dropdown">
+                    <div id="dropdownContact" class="menu-dropdown">
                         <ul class="py-2 text-sm">
                             <li>
                                 <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
@@ -93,7 +90,7 @@
                                 <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
                             </li>
                             <li>
-                                <a href="agb.html" class="block px-4 py-2 menu-link">AGB</a>
+                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
                             </li>
                             <li>
                                 <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
