@@ -1,43 +1,95 @@
 @import "tailwindcss";
 
 @theme {
---color-green-nbs: #008000;
---color-blue-nbs: #000080;
---color-rot-nbs: #ff3300;
+  --color-green-nbs: #008000;
+  --color-blue-nbs: #000080;
+  --color-rot-nbs: #ff3300;
 }
 
 @layer base {
-    h1 {
-      font-size: var(--text-4xl);
-    }
-    h2 {
-      font-size: var(--text-2xl);
-      font-weight: 800;
-      margin-block: calc(var(--spacing) * 3);
-    }
-    h3 {
-      font-size: var(--text-lg);
-      font-weight: 600;
-      margin-block: calc(var(--spacing) * 2);
-    }
-    h4 {
-      font-size: var(--text-base);
-      font-weight: 600;
-      margin-block: calc(var(--spacing) * 2);
-    }
-    a {
-      color: var(--color-blue-950);
-      text-decoration-line: underline;
-      cursor: pointer;
-    }
-    p {
-      font-size: var(--text-base);
-      margin-block: calc(var(--spacing) * 2); /* 0.5rem = 8px */
-    }
+  h1 {
+    display: block;
+    font-size: var(--text-4xl);
+    margin-top: 0.67rem;
+    margin-bottom: 0.67rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
   }
 
+  h2 {
+    display: block;
+    font-size: var(--text-2xl);
+    margin-top: 0.83rem;
+    margin-bottom: 0.83rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h3 {
+    display: block;
+    font-size: var(--text-xl);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h4 {
+    display: block;
+    font-size: var(--text-base);
+    margin-top: 1.33rem;
+    margin-bottom: 1.33rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h5 {
+    display: block;
+    font-size: var(--text-sm);
+    margin-top: 1.67rem;
+    margin-bottom: 1.67rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h6 {
+    display: block;
+    font-size: var(--text-xs);
+    margin-top: 2.33rem;
+    margin-bottom: 2.33rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  a {
+    color: var(--color-blue-950);
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: var(--text-sm);
+    margin-block: calc(var(--spacing) * 2);
+    /* 0.5rem = 8px */
+  }
+
+  li {
+    font-size: var(--text-sm);
+  }
+}
+
 body {
-  @apply relative w-screen min-h-min text-center p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
+  @apply relative w-screen min-h-min p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
+}
+
+.menu-item {
+  @apply text-base md:text-xl p-1 md:px-2 border-b-2 rounded-2xl border-amber-500
 }
 
 .menu-link {
@@ -46,11 +98,11 @@ body {
 }
 
 .menu-dropdown {
-  @apply absolute z-20 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-amber-400 transition-all duration-300 ease-in-out
+  @apply absolute top-10 z-20 hidden font-normal rounded-lg w-44 bg-linear-to-b from-amber-300 to-amber-500 transition-all duration-300 ease-in-out
 }
 
 .active-dropdown {
-  @apply block
+  @apply block 
 }
 
 .dropdown-trigger {

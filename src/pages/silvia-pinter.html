@@ -12,23 +12,21 @@
 
 <body>
 
-    <div class="self-center mb-6">
-        <p class="text-xl md:text-3xl font-bold">
-            <span class="text-green-nbs">Natürlich</span>
-            <span class="text-blue-nbs">Besser</span>
-            <span class="text-rot-nbs">Sehen</span>
-            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-        </p>
+    <div class="text-xl font-bold my-4 text-center md:text-4xl">
+        <span class="text-green-nbs mr-2">Natürlich</span>
+        <span class="text-blue-nbs mr-2">Besser</span>
+        <span class="text-rot-nbs mr-2">Sehen</span>
+        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
     </div>
 
 
     <nav class="relative z-10 top-0">
         <div class="w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="cursor-pointer" onclick="window.location.href='../../index.html'">
+                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
                     Startseite
                 </li>
-                <li class="dropdown-trigger" onclick="toggleOfferDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
                     Angebot
 
                     <div id="dropdownOffer" class="menu-dropdown">
@@ -52,11 +50,11 @@
                     </div>
                 </li>
 
-                <li class="cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
                     Über mich
                 </li>
 
-                <li class="dropdown-trigger" onclick="toggleMediaDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
                     Media
 
                     <div id="dropdownMedia" class="menu-dropdown">
@@ -78,7 +76,7 @@
                     </div>
                 </li>
 
-                <li class="dropdown-trigger" onclick="toggleContactDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
                     Kontakt
 
                     <div id="dropdownContact" class="menu-dropdown">
@@ -107,14 +105,17 @@
         </div>
     </nav>
 
-    <div class="grid grid-cols-12 gap-1 m-5">
-        <div class="col-span-2">
-            <img src="../images/silvia1.jpg">
+    <div class="grid grid-cols-4 gap-1 m-5">
+        <div class="col-span-4 place-self-center md:col-span-1">
+            <img src="../images/silvia1.jpg" class="rounded-2xl shadow-2xl">
         </div>
-        <div class="col-span-10">
+        <div class="col-span-4 md:col-span-3">
             <p class="text-left">
-                <span class="font-medium">Silvia Pintér</span>, arbeitet seit 1985 mit der Kinesiologie und dem Ganzheitlichen Sehen. Sie wurde 1990 von
-                Dr. Janet Goodrich zur Sehpädagogin in der Methode "Natürlich Besser Sehen" ausgebildet. Sie lehrt die
+                <span class="font-medium">Silvia Pintér</span>, arbeitet seit 1985 mit der Kinesiologie und dem
+                Ganzheitlichen Sehen.
+                <br>
+                Sie wurde 1990 von Dr. Janet Goodrich zur Sehpädagogin in der Methode "Natürlich Besser Sehen"
+                ausgebildet. Sie lehrt die
                 Vision Circles (Sehkreisen) nach Dr. Paul Dennison. 1992 Gründete Silvia Pintér das "Ausbildungs- u.
                 Selbsthilfe Zentrum für Natürlich Besser Sehen, Kinesiologie & System Analyse", in Aachen, Berlin und
                 Frankreich. Seit 1992 entwickelte sie zusammen mit Annie Tilmant (F) die Systemische Kinesiologie. Seit
@@ -128,53 +129,52 @@
                 und esotherischen Psychologie inspiriert.
             </p>
         </div>
-        <div class="col-start-2 col-span-10 mt-2">
+        <div class="col-span-4 md:col-start-2 md:col-span-2 mt-2">
             <ul class="list-disc ml-1 pl-2 text-left">
-                <li>Seit 1985 Arbeit und Ausbildung in Kinesiologie</li>
-                <li>1987 HP vorbereitende Ausbildung bei Jürgen Meier (Berlin)</li>
-                <li>Seit 1987 selbständig als Lehrerin für Kinesiologie, mit Einzelberatungen</li>
-                <li>zahlreiche Weiterbildungen im Bereich der Kinesiologie und Ganzheitlichen Lehre mit mehr als 3500
+                <li class="my-1">Seit 1985 Arbeit und Ausbildung in Kinesiologie</li>
+                <li class="my-1">1987 HP vorbereitende Ausbildung bei Jürgen Meier (Berlin)</li>
+                <li class="my-1">Seit 1987 selbständig als Lehrerin für Kinesiologie, mit Einzelberatungen</li>
+                <li class="my-1">Zahlreiche Weiterbildungen im Bereich der Kinesiologie und Ganzheitlichen Lehre mit mehr als 3500
                     Std. Unterricht.</li>
-                <li>1990 Ausbildung zur Sehlehrerin bei Dr. Janet Goodrich</li>
-                <li>
+                <li class="my-1">1990 Ausbildung zur Sehlehrerin bei Dr. Janet Goodrich</li>
+                <li class="my-1">
                     Seit 1991 Ausbildung in Systemischer Arbeit.
                 </li>
-                <li>
+                <li class="my-1">
                     Begründung der Synthese, der Systemischen Analyse nach der Schule von Palo Alto u. Mailand mit der
                     Kinesiologie – Systemische Kinesiologie
                 </li>
-                <li>
+                <li class="my-1">
                     1992 Gründung des "Ausbildungs- u. Selbsthilfe Zentrum für Natürlich Besser Sehen, Kinesiologie &
                     System- Arbeit", in Aachen u. Berlin
                 </li>
-                <li>
+                <li class="my-1">
                     1993 Gründung des "Institut pour Mieux Voir Naturellement et Centre de Kinesiologie" in Frankreich
                 </li>
-                <li>
-                    zahlreiche Kurse und Veranstaltungen in Deutschland und Frankreich mit Intensivwochen und
+                <li class="my-1">
+                    Zahlreiche Kurse und Veranstaltungen in Deutschland und Frankreich mit Intensivwochen und
                     Wochenendkursen in "Natürlich Besser Sehen" sowie Prävention am Arbeitsplatz und anerkannter
                     Bildungsurlaub
                 </li>
-                <li>
-                    eigene Entwicklungen im Ganzheitlichen Sehen, so die "Die homolaterale Augenmuskelkorrektur", "Die
+                <li class="my-1">
+                    Eigene Entwicklungen im Ganzheitlichen Sehen, so die "Die homolaterale Augenmuskelkorrektur", "Die
                     Emotionen der 5 Elemente für die Augen", "Die Stärkung der Netzhautzellen", "Systemische
                     Kinesiologie –
                     Familienstammbaum – Familienbild und Aufstellungen – wie sehe ich meine Familie", "Beidäugiges
                     Sehen",
                     "Visuelle Legastenie" wurden seit 1994 auf Internationalen Konferenzen vorgestellt und werden in
-                    Europa
-                    als Fort- und Weiterbildung unterrichtet
+                    Europa als Fort- und Weiterbildung unterrichtet
                 </li>
-                <li>
+                <li class="my-1">
                     2000 Eröffnung des Seminarhauses "Alte Brücker Post" im Land Brandenburg.
                 </li>
-                <li>
+                <li class="my-1">
                     2000 - 2004 in Ausbildung und Organisation der Kurse "Transformation durch Kinesiologie", "Innere
                     Führung", "Energetische Anatomie" von und mit Grethe Fremming und Rolf Havsboel aus Dänemark,
                     Polaris
                     Centre.
                 </li>
-                <li>
+                <li class="my-1">
                     2001 Redakteurin und Mitherausgeberin der Zeitschriften KINESIOLOGIE aktuell und VISION aktuell.
                 </li>
             </ul>

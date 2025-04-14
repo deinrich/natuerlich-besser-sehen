@@ -11,23 +11,20 @@
 
 <body class="h-screen">
 
-    <div class="self-center mb-6">
-        <p class="text-xl md:text-3xl font-bold">
-            <span class="text-green-nbs">Natürlich</span>
-            <span class="text-blue-nbs">Besser</span>
-            <span class="text-rot-nbs">Sehen</span>
-            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-        </p>
+    <div class="text-xl font-bold my-4 text-center md:text-4xl">
+        <span class="text-green-nbs mr-2">Natürlich</span>
+        <span class="text-blue-nbs mr-2">Besser</span>
+        <span class="text-rot-nbs mr-2">Sehen</span>
+        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
     </div>
-
 
     <nav class="relative z-10 top-0">
         <div class="w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="cursor-pointer" onclick="window.location.href='index.html'">
+                <li class="menu-item cursor-pointer" onclick="window.location.href='index.html'">
                     Startseite
                 </li>
-                <li class="dropdown-trigger" onclick="toggleOfferDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
                     Angebot
 
                     <div id="dropdownOffer" class="menu-dropdown">
@@ -52,11 +49,11 @@
                     </div>
                 </li>
 
-                <li class="cursor-pointer" onclick="window.location.href='src/pages/silvia-pinter.html'">
+                <li class="menu-item cursor-pointer" onclick="window.location.href='src/pages/silvia-pinter.html'">
                     Über mich
                 </li>
 
-                <li class="dropdown-trigger" onclick="toggleMediaDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
                     Media
 
                     <div id="dropdownMedia" class="menu-dropdown">
@@ -79,7 +76,7 @@
                     </div>
                 </li>
 
-                <li class="dropdown-trigger" onclick="toggleContactDropdown()">
+                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
                     Kontakt
 
                     <div id="dropdownContact" class="menu-dropdown">
@@ -118,8 +115,9 @@
         </div>
 
         <div class="col-span-8 md:col-span-4 mr-2">
-            <h3 class="text-base md:text-lg">Sehtraining und Sehtherapie zur Stärkung und Verbesserung Ihrer Sehfähigkeit</h3>
-            <h3 class="text-base md:text-lg">Gönnen Sie ihren Augen sich wieder zu stärken</h3>
+            <h5 class="md:text-base">Sehtraining und Sehtherapie zur Stärkung und Verbesserung Ihrer
+                Sehfähigkeit</h5>
+            <h5 class="md:text-base">Gönnen Sie ihren Augen sich wieder zu stärken</h5>
         </div>
         <div class="md:col-span-3"></div>
 
