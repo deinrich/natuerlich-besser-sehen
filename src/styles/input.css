@@ -88,7 +88,7 @@ body {
   @apply relative w-screen min-h-min p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
 }
 
-.todo {
+.min-height-screen {
   @apply min-h-screen
 }
 
