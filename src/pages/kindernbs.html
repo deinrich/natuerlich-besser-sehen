@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natuerlich besser sehen</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<script src="../scripts/navigation.js" defer></script>
+
+<body class="todo">
+
+    <div class="text-xl font-bold my-4 text-center md:text-4xl">
+        <span class="text-green-nbs mr-2">Natürlich</span>
+        <span class="text-blue-nbs mr-2">Besser</span>
+        <span class="text-rot-nbs mr-2">Sehen</span>
+        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+    </div>
+
+
+    <nav class="relative z-10 top-0">
+        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                    Startseite
+                </li>
+                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                    Angebot
+
+                    <div id="dropdownOffer" class="menu-dropdown">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                            </li>
+                            <li>
+                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                            </li>
+                            <li>
+                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                            </li>
+                            <li>
+                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                            </li>
+                            <li>
+                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                            </li>
+                            <li>
+                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                    Über mich
+                </li>
+
+                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                    Media
+
+                    <div id="dropdownMedia" class="menu-dropdown">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="erfahrungsberichte.html"
+                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                            </li>
+                            <li>
+                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                            </li>
+                            <li>
+                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                            </li>
+                            <li>
+                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                    Kontakt
+
+                    <div id="dropdownContact" class="menu-dropdown">
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                            </li>
+                            <li>
+                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                            </li>
+                            <li>
+                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li>
+                    Systemische Kniseologie
+                    <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="flex flex-col items-center justify-center h-full">
+        <img src="../images/construction-site-1561769_640.jpg" class="rounded-lg shadow-lg"
+            alt="Webseite in Erstellung">
+    </div>
+
+    <p class="hidden">
+        Für Kinder
+        https://web.archive.org/web/20230402000718/https://natuerlichbessersehen.de/kinder.php
+    </p>
+
+</body>
+
+</html>
