@@ -276,9 +276,6 @@
   .max-h-20 {
     max-height: calc(var(--spacing) * 20);
   }
-  .min-h-screen {
-    min-height: 100vh;
-  }
   .w-full {
     width: 100%;
   }
@@ -593,7 +590,7 @@
 }
 body {
   position: relative;
-  min-height: min-content;
+  min-height: 100vh;
   width: 100vw;
   --tw-gradient-position: to bottom;
   @supports (background-image: linear-gradient(in lab, red, red)) {
