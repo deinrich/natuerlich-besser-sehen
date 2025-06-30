@@ -116,3 +116,11 @@ body {
 .link {
   @apply text-xs md:text-sm hover:text-blue-800;
 }
+
+.timeline-dot {
+  @apply absolute w-3 h-3 bg-blue-950 rounded-full mt-1.5 -start-1.5 border border-blue-950
+}
+
+.timeline-time {
+  @apply mb-1 text-base font-semibold leading-none
+}
