@@ -85,7 +85,7 @@
 }
 
 body {
-  @apply relative w-screen min-h-screen p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
+  @apply relative min-h-screen p-1 bg-linear-to-b from-amber-300 to-amber-500 text-blue-950
 }
 
 .min-height-screen {
