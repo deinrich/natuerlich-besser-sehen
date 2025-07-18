@@ -124,3 +124,11 @@ body {
 .timeline-time {
   @apply mb-1 text-base font-semibold leading-none
 }
+
+.appointment-badge-yellow {
+  @apply text-xs md:text-sm rounded-full bg-amber-100 hover:bg-amber-200 px-2.5 py-0.5 whitespace-nowrap text-blue-nbs
+}
+
+.appointment-badge-blue {
+  @apply text-xs md:text-sm rounded-full bg-blue-200 hover:bg-blue-300 px-2.5 py-0.5 whitespace-nowrap text-blue-nbs
+}
