@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Erfahrungsberichte - Natürlich besser sehen</title>
+    <meta name="description"
+        content="Lesen Sie echte Erfahrungsberichte von Menschen, die durch Sehtraining ihre Sehkraft verbessert haben.">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -19,207 +21,328 @@
         <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
     </div>
 
+    <header>
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html"
+                                        class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <!-- <li>
+                    <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="flex flex-col h-full md:w-1/2 m-5 md:m-auto text-center content-center">
-        <h3>Erfahrungsberichte</h3>
-        <h5>Erfahrungsbericht</h5>
-        <div class="self-center text-left">
-            <p>Aufgrund meiner frühen Geburt, hat sich die Anatomie meiner Augen nicht so entwickelt, wie es bei
-                gesunden Augen
-                üblich ist. Besonders bei meinem linken Auge ist der Abstand zwischen der Hornhaut und der Linse sehr
-                schmal. Dies erschwert die Zirkulierung des Kammerwassers. Im Herbst letzten Jahres erlitt ich
-                plötzliche Schmerzattacken, die sich über die gesamte linke Gesichtshälfte zogen. Daraufhin wurde ich
-                vom Augenarzt untersucht, der einen erhöhten Augeninnendruck feststellte. Dieser resultierte aus einer
-                zusätzlichen Verdickung der Linse. Flockenförmige Ablagerungen setzten sich in der Augenlinse fest, die
-                ich aufgrund meines geringen Sehvermögens auf dem linken Auge selbst nicht bemerkte. Mir wurden als
-                erstes drucksenkende Medikamente verschrieben, die jedoch zumindest ästhetische Nebenwirkungen
-                aufwiesen. Der Wuchs meiner Wimpern wurde auf dem behandelten Auge beschleunigt. Außerdem verfärbte sich
-                mein Augenlid dunkel. Um nicht immer auf Medikamente angewiesen zu sein, suchte ich nach
-                Alternativen.</p>
-            <p>
-                Da ich mit Silvia Pinter schon verschiedene Augenübungen und Kinesiologiesitzungen absolvierte, erschien
-                sie mir auch für dieses Problem eine geeignete Ansprechpartner zu sein.
-                Also testeten wir wieder mit Hilfe der Kinesiologie die benötigten Mittel für meine Augen. Daraufhin
-                erfolgte eine Lichttherapie. Durch entsprechende Farben wurden bestimmte Schwingungen ins Auge
-                geleitetet, welche die Ablagerungen in der Linse lösen. Außerdem wurde eine Vitamintherapie
-                durchgeführt. Bestimmte Vitamine, in meinem Fall die Vitamine C und E, werden in hohen Dosen zugeführt,
-                um das Auge mit vielen Nährstoffen zu versorgen. Bei meinem nächsten Arztbesuch reagierte der
-                behandelnde Arzt mit Erstaunen. In der Linse war zwar immer noch eine Trübung festzustellen, aber die
-                „dicken Flocken“ waren nicht mehr zu sehen. Auch der Augendruck sang soweit ab, dass auf die Medikamente
-                verzichtet werden konnte. Seit nunmehr acht Monaten lebe ich ohne drucksenkende Augentropfen und
-                jegliche Form von Schmerzattacken. Der Augendruck hält sich auf einem konstanten Niveau und ich bin fest
-                davon überzeugt dass das auch zukünftig so bleibt. Ich war mir auch schon damals sicher, dass ich die
-                Augentropfen nicht mein restliches Leben verwenden muss, um den Augeninnendruck konstant zu halten, aber
-                das schon eine Besserung innerhalb von drei Monaten eintritt, hielt ich nicht für möglich. Die Ärzte
-                können sich das Verschwinden der Verklumpungen in der Linse jedenfalls nicht erklären.
-            </p>
-            <p class="text-center">V.M.E. aus PM
-                27.07. 2006</p>
-        </div>
+    </header>
 
-        <h5>Zwischenbericht einer Mutter nach der 1. Einzelarbeit</h5>
-        <div class="self-center text-left">
-            <p>Hallo und guten Tag Frau Pinter,
-                <br>
-                <br>
-                nachdem nun schon fast 2 Wochen seit unserem Besuch in Berlin vergangen sind, möchte ich Ihnen einen
-                kurzen Zwischenbericht zukommen lassen.
-                Als erstes Mal möchte ich Ihnen mitteilen, dass Laura bisher täglich die Spiele (Schwungball, Memory
-                weit-nah, Überkreuz, Switch-Punkte und Fußmassage) mitmacht und auch die Bachblüten ohne Aussetzer
-                einnimmt. An manchen Tagen hat sie mehr Lust mitzumachen, an manchen Tagen weniger, dann lassen wir es
-                einfach oder halten uns nur kurz.
-                <br>
-                <br>
-                Das Dauerschielen ist weg und bis heute ist es noch so, bis auf wenige Ausnahmen, in denen uns das
-                Schielen im Laufe des Tages "auffällt".
-                <br>
-                <br>
-                Letzte Woche Freitag wollte sie wohl die Brille aufsetzen, ich gab sie ihr, und nach 3 Sekunden zog sie
-                diese wieder runter und meinte, so kann ich nicht Fernseh schauen, ohne ist Besser! Ich war innerlich so
-                froh über diesen Satz, weil es wieder gezeigt hat, dass mit der Brille "etwas nicht stimmt" und das sie
-                für Laura einfach nicht nötig ist.
-                <br>
-                <br>
-                Die Erzieherinnen in der Kita sagten, das Laura nicht mehr gegen Tische läuft und beim eingießen ins
-                Glas nicht mehr daneben gießt.
-            </p>
-        </div>
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
 
-    </div>
+            <!-- Page Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-blue-nbs mb-4">Erfahrungsberichte</h1>
+                <p class="text-lg text-gray-600">Echte Geschichten von Menschen, die ihre Sehkraft verbessert haben</p>
+            </div>
+
+            <!-- Info Box -->
+            <div class="bg-gradient-to-b from-amber-100 to-amber-200 border-l-4 border-blue-nbs p-6 mb-12 rounded-r-lg">
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>💙 Authentische Erlebnisse:</strong> Diese Berichte wurden uns von unseren Teilnehmern zur
+                    Verfügung gestellt und zeigen die vielfältigen Erfolge des ganzheitlichen Sehtrainings.
+                </p>
+            </div>
+
+            <!-- Testimonial 1 -->
+            <article class="bg-gradient-to-b from-amber-100 to-amber-200 shadow-lg rounded-lg overflow-hidden mb-8">
+                <div class="bg-gradient-to-r from-green-nbs to-blue-nbs p-4">
+                    <h2 class="text-xl md:text-2xl font-bold text-white">
+                        Erfolgreiche Behandlung von erhöhtem Augeninnendruck
+                    </h2>
+                </div>
+
+                <div class="p-6 md:p-8">
+                    <!-- Key Results Box -->
+                    <div class="bg-green-50 border-l-4 border-green-nbs p-4 mb-6 rounded-r-lg">
+                        <h3 class="font-bold text-green-nbs mb-2">✓ Erfolge nach 3 Monaten:</h3>
+                        <ul class="space-y-1 text-gray-700">
+                            <li>• Ablagerungen in der Linse aufgelöst</li>
+                            <li>• Augendruck normalisiert</li>
+                            <li>• Keine Medikamente mehr nötig</li>
+                            <li>• Schmerzfrei seit 8 Monaten</li>
+                        </ul>
+                    </div>
+
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            Aufgrund meiner frühen Geburt hat sich die Anatomie meiner Augen nicht so entwickelt, wie es
+                            bei gesunden Augen üblich ist. Besonders bei meinem linken Auge ist der Abstand zwischen der
+                            Hornhaut und der Linse sehr schmal. Dies erschwert die Zirkulierung des Kammerwassers.
+                        </p>
+
+                        <p>
+                            Im Herbst letzten Jahres erlitt ich plötzliche Schmerzattacken, die sich über die gesamte
+                            linke Gesichtshälfte zogen. Daraufhin wurde ich vom Augenarzt untersucht, der einen erhöhten
+                            Augeninnendruck feststellte. Dieser resultierte aus einer zusätzlichen Verdickung der Linse.
+                            Flockenförmige Ablagerungen setzten sich in der Augenlinse fest, die ich aufgrund meines
+                            geringen Sehvermögens auf dem linken Auge selbst nicht bemerkte.
+                        </p>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg my-6">
+                            <p class="font-semibold text-gray-800 mb-2">Die Behandlung:</p>
+                            <p>
+                                Mir wurden als erstes drucksenkende Medikamente verschrieben, die jedoch zumindest
+                                ästhetische Nebenwirkungen aufwiesen. Der Wuchs meiner Wimpern wurde auf dem behandelten
+                                Auge beschleunigt. Außerdem verfärbte sich mein Augenlid dunkel. Um nicht immer auf
+                                Medikamente angewiesen zu sein, suchte ich nach Alternativen.
+                            </p>
+                        </div>
+
+                        <p>
+                            Da ich mit Silvia Pinter schon verschiedene Augenübungen und Kinesiologiesitzungen
+                            absolvierte, erschien sie mir auch für dieses Problem eine geeignete Ansprechpartnerin zu
+                            sein. Also testeten wir wieder mit Hilfe der Kinesiologie die benötigten Mittel für meine
+                            Augen.
+                        </p>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg my-6">
+                            <p class="font-semibold text-gray-800 mb-2">Die Methoden:</p>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li><strong>Lichttherapie:</strong> Durch entsprechende Farben wurden bestimmte
+                                    Schwingungen ins Auge geleitet, welche die Ablagerungen in der Linse lösen</li>
+                                <li><strong>Vitamintherapie:</strong> Bestimmte Vitamine (in meinem Fall Vitamine C und
+                                    E) wurden in hohen Dosen zugeführt, um das Auge mit vielen Nährstoffen zu versorgen
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Bei meinem nächsten Arztbesuch reagierte der behandelnde Arzt mit Erstaunen. In der Linse
+                            war zwar immer noch eine Trübung festzustellen, aber die <strong>„dicken Flocken" waren
+                                nicht mehr zu sehen</strong>. Auch der Augendruck sang soweit ab, dass auf die
+                            Medikamente verzichtet werden konnte.
+                        </p>
+
+                        <p>
+                            Seit nunmehr acht Monaten lebe ich ohne drucksenkende Augentropfen und jegliche Form von
+                            Schmerzattacken. Der Augendruck hält sich auf einem konstanten Niveau und ich bin fest davon
+                            überzeugt, dass das auch zukünftig so bleibt. Ich war mir auch schon damals sicher, dass ich
+                            die Augentropfen nicht mein restliches Leben verwenden muss, aber dass schon eine Besserung
+                            innerhalb von drei Monaten eintritt, hielt ich nicht für möglich.
+                        </p>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg my-6 italic text-gray-600">
+                            <p>Die Ärzte können sich das Verschwinden der Verklumpungen in der Linse jedenfalls nicht
+                                erklären.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-amber-100">
+                        <p class="text-right text-gray-600 font-semibold">V.M.E. aus PM – Juli 2006</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="bg-gradient-to-b from-amber-100 to-amber-200 shadow-lg rounded-lg overflow-hidden mb-8">
+                <div class="bg-gradient-to-r from-blue-nbs to-rot-nbs p-4">
+                    <h2 class="text-xl md:text-2xl font-bold text-white">
+                        Zwischenbericht: Lauras Fortschritte nach der ersten Einzelarbeit
+                    </h2>
+                </div>
+
+                <div class="p-6 md:p-8">
+                    <!-- Key Results Box -->
+                    <div class="bg-blue-50 border-l-4 border-blue-nbs p-4 mb-6 rounded-r-lg">
+                        <h3 class="font-bold text-blue-nbs mb-2">✓ Erfolge nach 2 Wochen:</h3>
+                        <ul class="space-y-1 text-gray-700">
+                            <li>• Dauerschielen ist weg</li>
+                            <li>• Läuft nicht mehr gegen Tische</li>
+                            <li>• Gießt präzise ins Glas</li>
+                            <li>• Brille wird abgelehnt: "ohne ist besser!"</li>
+                        </ul>
+                    </div>
+
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
+                        <p class="font-semibold text-gray-800">Hallo und guten Tag Frau Pinter,</p>
+
+                        <p>
+                            Nachdem nun schon fast 2 Wochen seit unserem Besuch in Berlin vergangen sind, möchte ich
+                            Ihnen einen kurzen Zwischenbericht zukommen lassen.
+                        </p>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg my-6">
+                            <p class="font-semibold text-gray-800 mb-2">Tägliche Übungen:</p>
+                            <p>
+                                Als erstes möchte ich Ihnen mitteilen, dass Laura bisher <strong>täglich die Spiele
+                                    mitmacht</strong>:
+                            </p>
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Schwungball</li>
+                                <li>Memory weit-nah</li>
+                                <li>Überkreuz</li>
+                                <li>Switch-Punkte</li>
+                                <li>Fußmassage</li>
+                            </ul>
+                            <p class="mt-2">Die Bachblüten nimmt sie ohne Aussetzer ein. An manchen Tagen hat sie mehr
+                                Lust mitzumachen, an manchen Tagen weniger – dann lassen wir es einfach oder halten uns
+                                nur kurz.</p>
+                        </div>
+
+                        <p>
+                            <strong>Das Dauerschielen ist weg</strong> und bis heute ist es noch so, bis auf wenige
+                            Ausnahmen, in denen uns das Schielen im Laufe des Tages "auffällt".
+                        </p>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg my-6">
+                            <p class="font-semibold text-gray-800 mb-2">💡 Der Brille-Moment:</p>
+                            <p>
+                                Letzte Woche Freitag wollte sie wohl die Brille aufsetzen, ich gab sie ihr, und nach 3
+                                Sekunden zog sie diese wieder runter und meinte: <em>"So kann ich nicht Fernseh schauen,
+                                    ohne ist besser!"</em>
+                            </p>
+                            <p class="mt-2 italic">
+                                Ich war innerlich so froh über diesen Satz, weil es wieder gezeigt hat, dass mit der
+                                Brille "etwas nicht stimmt" und dass sie für Laura einfach nicht nötig ist.
+                            </p>
+                        </div>
+
+                        <p>
+                            Die <strong>Erzieherinnen in der Kita</strong> sagten, dass Laura nicht mehr gegen Tische
+                            läuft und beim Eingießen ins Glas nicht mehr daneben gießt.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-amber-100">
+                        <p class="text-right text-gray-600 font-semibold">Eine glückliche Mutter</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
+
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
+                            rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
+
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/"
-                        class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Ausbildung zur/m SehpädagogIn - Natürlich besser sehen</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -12,259 +12,390 @@
 
 <body class="min-height-screen">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+        </div>
 
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html"
+                                        class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <!-- <li>
+                    <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <span class="flex items-center">
+            <span class="h-px flex-1 bg-blue-950"></span>
+
+            <h1 class="shrink-0 px-4">Ausbildung zur/m SehpädagogIn</h1>
+
+            <span class="h-px flex-1 bg-blue-950"></span>
+        </span>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Important Info Box -->
+            <div class="bg-gradient-to-b from-amber-100 to-amber-200 border-l-4 border-green-nbs p-6 mb-8 rounded-r-lg">
+                <p class="text-lg font-semibold mb-2">📅 Ausbildungsbeginn</p>
+                <p class="text-gray-700">Jährlich im Frühling/Herbst. Genauen Termin bitte erfragen.</p>
+            </div>
+
+            <!-- Module Structure -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+
+                    <h2 class="shrink-0 px-4">Aufbau der Ausbildung</h2>
+
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    Die Ausbildung ist in einzelne Module à 3-8 Tage aufgebaut.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-green-nbs">
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs">Module 1-2</h3>
+                        <p class="text-gray-700">Befähigt als <strong>Sehtrainerin</strong> zu arbeiten</p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-blue-nbs">
+                        <h3 class="font-bold text-lg mb-3 text-blue-nbs">Module 3-4</h3>
+                        <p class="text-gray-700">Vertiefende Arbeit zur <strong>Sehpädagogin</strong></p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-rot-nbs">
+                        <h3 class="font-bold text-lg mb-3 text-rot-nbs">Module 5-6</h3>
+                        <p class="text-gray-700">Emotionale Sehblockaden lösen und therapeutisch arbeiten</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg mb-4">
+                    <p class="text-gray-700"><strong>✓</strong> Nach den Modulen 1-2 können Sie bereits in Kleingruppen
+                        arbeiten</p>
+                    <p class="text-gray-700"><strong>✓</strong> SehtrainerInnen können quer einsteigen - Vorkenntnisse
+                        werden anerkannt</p>
+                    <p class="text-gray-700"><strong>✓</strong> Voraussetzung: Teilnahme an einer Intensivwoche oder
+                        zwei Intensivwochenenden</p>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+
+                    <h2 class="shrink-0 px-4">Ausbildungsinhalte</h2>
+
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Anatomie und Physiologie des Sehens</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Optik und Mechanik des Sehens</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Theorien über den Ursprung des verschwommenen Sehens</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Emotionale Faktoren von Sehstörungen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Frühkindliche Entwicklung und das Sehen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Klassische und neue Sehspiele</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Farben und Visualisieren</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Atem, Körperhaltung und das Sehen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Kinesiologie: Gehirnintegration</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Die fünf Elemente und ihre Emotionen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Methoden des Stressabbaus nach Janet Goodrich</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Umwandeln blockierender Denkmuster</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Ernährung: Vitamine & Heilkräuter</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Ganzheitlicher Ansatz bei Sehstörungen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Stärkung der Netzhautzellen</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-b from-amber-100 to-amber-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700">✓ Homolaterale Augenmuskelkorrektur</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg mt-6">
+                    <h3 class="font-bold text-lg mb-3 text-gray-800">Praktische Arbeit</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Unterricht in Privatstunden, Seminaren und das Halten von Vorträgen sowie Supervision.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Details -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+
+                    <h2 class="shrink-0 px-4">Details</h2>
+
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <dl class="space-y-4">
+                        <div class="flex flex-col md:flex-row md:gap-4">
+                            <dt class="font-semibold text-gray-700 md:w-32">Dauer:</dt>
+                            <dd class="text-gray-600">1-2 Jahre, 6 Module à 3-8 Tage</dd>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:gap-4">
+                            <dt class="font-semibold text-gray-700 md:w-32">Kosten:</dt>
+                            <dd class="text-gray-600">Bitte erfragen</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- About Trainer -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+
+                    <h2 class="shrink-0 px-4">Ausbildungsleitung</h2>
+
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4 text-blue-nbs">Silvia Pintér</h3>
+
+                    <div class="space-y-4 text-gray-700">
+                        <p class="leading-relaxed">
+                            Ich arbeite mit der Methode <strong>Natürlich Besser Sehen</strong> und wurde 1990 von
+                            <strong>Dr. Janet Goodrich</strong> ausgebildet. Seit 1985 arbeite ich mit der Kinesiologie
+                            und bin Lehrerin für die Vision Circles (Sehkreise) nach Paul Dennison.
+                        </p>
+
+                        <p class="leading-relaxed">
+                            Seit 1995 entwickelte ich die <strong>homolaterale Muskelkorrektur der
+                                Augenmuskeln</strong>,
+                            die Stärkung der Netzhautzellen und die Familien-Systemische Arbeit mit den Augen.
+                        </p>
+
+                        <div class="bg-amber-100 bg-opacity-60 p-4 rounded-md mt-4">
+                            <p class="italic text-gray-600">
+                                1995 veröffentlichte ich anlässlich der Internationalen Konferenz in Italien
+                                <strong>"Die Emotionen der 5 Elemente"</strong> für die Augen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Recommendations -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+
+                    <h2 class="shrink-0 px-4">📚 Buchempfehlungen</h2>
+
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="mr-3 text-green-nbs">📖</span>
+                            <span><strong>"Natürlich Besser Sehen"</strong> von Dr. Janet Goodrich</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-3 text-green-nbs">📖</span>
+                            <span><strong>"Spielend besser Sehen"</strong> von Dr. Janet Goodrich</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-green-nbs to-blue-nbs text-white p-8 rounded-lg text-center shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Interessiert?</h3>
+                <p class="mb-6">Kontaktieren Sie mich für weitere Informationen und genaue Termine.</p>
+                <a href="kontakt.html"
+                    class="inline-block bg-gradient-to-b from-amber-100 to-amber-200 text-blue-nbs px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-colors">
+                    Jetzt Kontakt aufnehmen
+                </a>
+            </div>
         </div>
-    </nav>
+    </main>
 
-    <h1 class="text-center">
-        Ausbildung zur/m SehpädagogIn
-    </h1>
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
 
-    <div class="grid grid-cols-5 gap-5 mx-5">
-        <div class="md:col-span-1"></div>
-        <div class="col-span-full md:col-span-3">
-            <p>
-                Ausbildungsbeginn jährlich im Frühling/ Herbst, genauen Termin bitte erfragen.
-            </p>
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
 
-            <p>
-                Die Ausbildung ist in einzelne Module a 3 - 8 Tage aufgebaut.
-                <br>
-                Module 1-2 befähigt als Sehtrainerin zu arbeiten
-                <br>
-                Module 3-4 vertiefende Arbeit zur Sehpädagogin
-                <br>
-                Module 5-6 vertiefende Arbeit um emotionale Sehblockaden zu lösen und therapeutisch zu arbeiten.
-                <br>
-                Nach den Modulen 1-2 können und sollen die Trainerinnen schon in Kleingruppen arbeiten.
-                <br>
-                SehtrainerInnen können quer einsteigen. Die Vorkenntnisse werden anerkannt.
-                <br>
-                Vorraussetzung für die Ausbildung ist die vorherige Teilnahme an einer Intensivwoche oder zwei
-                Intensivwochenenden.
-            </p>
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
 
-            <p>
-                Inhalt:
-                <br>
-                <br>
-                Anatomie und Physiologie des Sehens
-                <br>
-                <br>
-                Optik und Mechanik des Sehens
-                <br>
-                <br>
-                Theorien über den Ursprung des verschwommenen Sehens
-                <br>
-                <br>
-                Emotionale Faktoren von Kurz-, Weit-, Altersweitsichtigkeit, Astigmatismus und Schielen
-                <br>
-                <br>
-                Frühkindliche Entwicklung und das Sehen: von der Geburt bis zur Pubertät
-                <br>
-                <br>
-                Klassische und neue Sehspiele
-                <br>
-                <br>
-                Farben und Visualisieren
-                <br>
-                <br>
-                Atem, Körperhaltung und das Sehen
-                <br>
-                <br>
-                Kinesiologie: Gehirnintegration, TFH-Muskeln für die Körperhaltung
-                <br>
-                <br>
-                Die fünf Elemente und ihre Farben und Emotionen für das Sehen
-                <br>
-                <br>
-                Verschiedene Methoden des Stressabbaus und heilen der Emotionen nach Janet Goodrich
-                <br>
-                <br>
-                Umwandeln der das Sehen blockierenden Denk-, Glaubens- und Emotionalmuster
-                <br>
-                <br>
-                Ernährung: Vitamine, Mineralien und Heilkräuter
-                <br>
-                <br>
-                Ganzheitlicher Ansatz bei Sehstörungen
-                <br>
-                <br>
-                Stärkung der Netzhautzellen
-                <br>
-                <br>
-                Homolaterale Augenmuskelkorrektur
-                <br>
-                <br>
-                Praktische Arbeit als Sehlehrer/In in Firmen, mit Kindern und Erwachsenen
-            <p>
-                Unterricht in Privatstunden, Seminaren und das Halten von Vorträgen sowie Supervision.
-                <br>
-                Dauer 1 -2 Jahre, 6 Module, 3 - 8 Tage
-                <br>
-                Kosten bitte erfragen
-            </p>
-            <p>
-                Leitung: Silvia Pintér
-                "... ich arbeitet mit der Methode Natürlich Besser Sehen und wurde 1990 von Dr. Janet Goodrich
-                ausgebildet. Seit
-                1985 arbeitet ich mit der Kinesiologie und bin Lehrerin für die Vision Circles (Sehkreise) nach Paul
-                Dennison.
-                Seit 1995 entwickelte ich die homolaterale Muskelkorrektur der Augenmuskeln, die Stärkung der
-                Netzhautzellen und
-                die Familien- Systemische Arbeit mit den Augen."
-            </p>
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
 
-            <p>
-                "1995 veröffentlichte ich anläßlich der Internationalen Konferenz in Italien "Die Emotionen der 5
-                Elemente" für
-                die Augen."
-            </p>
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
+                            rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
 
-            <p>
-                Buchempfehlung:
-                "Natürlich Besser Sehen", "Spielend besser Sehen" von Dr. Janet Goodrich
-            </p>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
-                        rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>

@@ -1,177 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Natürlich Besser Sehen - Sehtraining & Sehtherapie | Silvia Pintér</title>
+    <meta name="description"
+        content="Sehtraining und Sehtherapie zur Stärkung und Verbesserung Ihrer Sehfähigkeit. Gönnen Sie Ihren Augen sich wieder zu stärken.">
     <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <script src="src/scripts/navigation.js" defer></script>
 
-<body>
+<body class="min-h-screen flex flex-col">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+        </div>
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="src/pages/angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/firmentraining.html"
-                                    class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="src/pages/angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/einzelarbeit.html"
+                                        class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/firmentraining.html"
+                                        class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='src/pages/silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='src/pages/silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="src/pages/erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/publikationen.html"
-                                    class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="src/pages/erfahrungsberichte.html"
+                                        class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/publikationen.html"
+                                        class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="src/pages/anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="src/pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="src/pages/anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/kontakt.html"
+                                        class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="src/pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/datenschutz.html"
+                                        class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- <li>
+                    <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-8 md:py-12">
+            <div class="max-w-4xl mx-auto">
 
-    <div class="grid grid-cols-4 my-8 mx-2">
-        <div class="col-span-4 md:col-start-2 md:col-span-2 mr-2 text-center">
-            <h3>Sehtraining und Sehtherapie zur Stärkung und Verbesserung Ihrer
-                Sehfähigkeit</h3>
-            <h3>Gönnen Sie ihren Augen sich wieder zu stärken</h3>
-        </div>
-        <div class="col-span-4 mx-auto my-8">
-            <img src="src/images/wanderer.gif" alt="Augen-Menschchen wandert"
-                class=" max-h-20 max-w-20 md:max-h-28 md:max-w-28">
-        </div>
+                <!-- Main Headline -->
+                <div class="text-center mb-8">
+                    <h1 class="text-xl md:text-4xl">Sehtraining und Sehtherapie</h1>
+                    <h3>zur Stärkung und Verbesserung Ihrer Sehfähigkeit</h3>
+                    <h3>Gönnen Sie ihren Augen sich wieder zu stärken</h3>
+                </div>
 
-        <div class="col-span-4 mx-auto">
-            <img src="src/images/Ostseestrand Kalifornien_html_d0df15328fdeb780.jpg" alt="Ostseestrand"
-                class="rounded-lg shadow-lg">
-        </div>
+                <!-- Animated Eye Character -->
+                <div class="flex justify-center my-12">
+                    <img src="src/images/wanderer.gif" alt="Augen-Menschchen wandert"
+                        class="h-24 w-24 md:h-36 md:w-36 object-contain">
+                </div>
 
-    </div>
+                <!-- Main Image -->
+                <div class="mb-12">
+                    <img src="src/images/325-3255637_hintergrundbilder-mit-winterlandschaft-winterlandschaft-winterbilder-hintergrund-kostenlos.jpg"
+                        alt="Winterlandschaft - Klare Sicht" class="w-full rounded-lg shadow-xl">
+                </div>
+
+                <!-- What We Offer -->
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-8 rounded-lg shadow-md mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-nbs">
+                        Was Ich Ihnen biete
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-nbs text-2xl pt-4">✓</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Einzeltraining</h3>
+                                <p class="text-gray-600 text-sm">Individuelle Betreuung für Ihre speziellen Bedürfnisse
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-nbs text-2xl pt-4">✓</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Gruppenkurse</h3>
+                                <p class="text-gray-600 text-sm">Intensivwochen und regelmäßige Trainings</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-nbs text-2xl pt-4">✓</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Ausbildung</h3>
+                                <p class="text-gray-600 text-sm">Werden Sie selbst SehpädagogIn</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-nbs text-2xl pt-4">✓</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Firmentraining</h3>
+                                <p class="text-gray-600 text-sm">Gesunde Augen am Arbeitsplatz</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <p class="text-gray-600 italic mb-4">
+                            "Dank des Trainings kann ich wieder ohne Brille lesen!"
+                        </p>
+                        <a href="src/pages/erfahrungsberichte.html" class="font-semibold no-underline hover:underline">
+                            Mehr Erfahrungsberichte →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testimonial Teaser -->
+
+            </div>
+        </section>
+    </main>
+
+<footer class="text-blue-950 mt-auto">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
+
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="src/pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="src/pages/datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="src/pages/kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
+                            rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
+
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
-                        rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>
