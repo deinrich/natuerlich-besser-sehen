@@ -4,408 +4,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Termine - Natürlich besser sehen</title>
+    <meta name="description" content="Aktuelle Termine für Sehtraining, Intensivwochen und Kurse. Natürlich Besser Sehen mit Silvia Pintér.">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <script src="../scripts/navigation.js" defer></script>
 
-<body>
+<body class="min-height-screen">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+        </div>
 
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
-
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
                 <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-6 m-2">
-        <div class="col-span-1 md:col-start-2 md:col-span-4 text-center">
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="mb-4">Aktuelle Termine</h1>
             <h3>Sehtraining zur Verbesserung und Prävention Ihrer Sehkraft</h3>
-            <h4>Gesund und natürlich besser sehen - Stärken der Sehfähigkeit</h4>
-            <span class="flex items-center">
-                <span class="h-px flex-1 bg-blue-950"></span>
-
-                <h4 class="shrink-0 px-4">Intensivwochenenden NBS u. Kinesiologie</h4>
-
-                <span class="h-px flex-1 bg-blue-950"></span>
-            </span>
         </div>
 
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Introduction -->
+            <div class="bg-gradient-to-b from-amber-100 to-amber-200 border-l-4 border-green-nbs p-6 mb-8 rounded-r-lg">
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>📅 Gesund und natürlich besser sehen:</strong> Stärken Sie Ihre Sehfähigkeit mit unseren Intensivwochenenden, Intensivwochen und Folgekursen.
+                </p>
+            </div>
 
-        <!-- Termine cards start-->
+            <!-- Intensivwochenenden Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Intensivwochenenden NBS & Kinesiologie</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
 
-        <div class="col-span-1 md:col-start-2 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-blue-300 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base">14. – 15.03.2026</time>
-                <h4 class="mt-0.5">Aachen</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Aachen Card -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-green-nbs">
+                        <time datetime="2026-03-14" class="block text-sm font-semibold text-green-nbs mb-2">
+                            📅 14. – 15.03.2026
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Aachen</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-nbs text-white">
+                                Intensivwochenende
+                            </span>
+                            <a href="../pdfs/course_infos/Wieder besser sehen in Aachen 13.- 15..03.2026.pdf" 
+                               class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white text-green-nbs hover:bg-green-nbs hover:text-white transition-colors no-underline">
+                                Mehr Info
+                                <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 7">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
 
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
-                </h3>
+                    <!-- Nierstein Card -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-blue-nbs">
+                        <time datetime="2026-04-18" class="block text-sm font-semibold text-blue-nbs mb-2">
+                            📅 18. – 19.04.2026
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Nierstein bei Mainz</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-nbs text-white">
+                                Intensivwochenende
+                            </span>
+                            <a href="../pdfs/course_infos/besser sehen in Nierstein bei Mainz 18.-19..04.2026.pdf" 
+                               class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white text-blue-nbs hover:bg-blue-nbs hover:text-white transition-colors no-underline">
+                                Mehr Info
+                                <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 7">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <!-- <span class="appointment-badge-yellow">
-                        Grundkurs
-                    </span> -->
-                    <span class="appointment-badge-yellow">
-                        Intensivwochenende
-                    </span>
-                    <a href="../pdfs/course_infos/Wieder besser sehen in Aachen 13.- 15..03.2026.pdf"
-                        class="appointment-badge-yellow inline-flex items-center no-underline">
-                        Mehr Info
-                        <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 16 7">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
+            <!-- Intensivwochen Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Intensivwochen</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm mb-6">
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        <strong>🌅 Vormittag:</strong> Übungen zur Sehstärkung | 
+                        <strong>🌤️ Nachmittag:</strong> Zeit für Ihre persönlichen Aktivitäten
+                    </p>
+                </div>
+
+                <!-- Nordhessen Card -->
+                <!-- <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-rot-nbs">
+                        <time datetime="2025-10-12" class="block text-sm font-semibold text-rot-nbs mb-2">
+                            📅 12.–17. Oktober
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Nordhessen</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Herbstferien - Bitte bei Interesse voranmelden
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-rot-nbs text-white">
+                                Intensivwoche
+                            </span>
+                        </div>
+                    </div>
+                -->
+
+                    <!-- Herbstferien Card -->
+                    <!-- <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-green-nbs">
+                        <time datetime="2025-10-19" class="block text-sm font-semibold text-green-nbs mb-2">
+                            📅 19.–24. Oktober
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Herbstferien</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Bitte bei Interesse voranmelden
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-nbs text-white">
+                                Intensivwoche
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <!-- Intensiv-Seh-Wochen Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Intensiv-Seh-Wochen für Erwachsene & Kinder</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm mb-6">
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        <strong>📝 In Planung mit Voranmeldung</strong>
+                    </p>
+                </div>
+
+                <!-- Ostsee August Card -->
+                <!-- <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-blue-nbs">
+                        <time datetime="2025-08-23" class="block text-sm font-semibold text-blue-nbs mb-2">
+                            📅 23.–30. August
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Ostsee</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Bitte bei Interesse voranmelden
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-nbs text-white">
+                                Intensivwoche
+                            </span>
+                        </div>
+                    </div> -->
+
+                    <!-- Ostsee Oktober Card -->
+                   <!--  <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-rot-nbs">
+                        <time datetime="2025-10-18" class="block text-sm font-semibold text-rot-nbs mb-2">
+                            📅 18.–25. Oktober
+                        </time>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Ostsee</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Herbstferien - Bitte bei Interesse voranmelden
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-rot-nbs text-white">
+                                Intensivwoche
+                            </span>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Sonstiges Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Weitere Angebote</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-3 text-gray-800 text-center">Ab November in Berlin</h3>
+                    <div class="text-center text-gray-700 space-y-2">
+                        <p>Kinder- und Erwachsenen-Folgekurse je 1,5 Stunden</p>
+                        <p class="mt-4">
+                            <strong>Weitere Informationen:</strong>
+                        </p>
+                        <a href="mailto:besser-sehen-s.pinter@posteo.com" class="text-blue-nbs font-semibold hover:underline">
+                            besser-sehen-s.pinter@posteo.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-green-nbs to-blue-nbs text-white p-8 rounded-lg text-center shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Interesse an einem Kurs?</h3>
+                <p class="mb-6">Melden Sie sich jetzt an oder kontaktieren Sie mich für weitere Informationen</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="anmeldung.html" class="inline-block bg-gradient-to-b from-amber-100 to-amber-200 text-blue-nbs px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-colors">
+                        Jetzt anmelden
+                    </a>
+                    <a href="kontakt.html" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-nbs transition-colors">
+                        Kontakt
                     </a>
                 </div>
-            </article>
+            </div>
         </div>
+    </main>
 
-        <div class="col-span-1 md:col-start-4 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-amber-100 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base">18. – 19.04.2026</time>
-                <h4 class="mt-0.5">Nierstein bei Mainz</h4>
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
 
-                <h3 class="md:min-h-16 mt-0.5 font-medium">
-                    Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
-                </h3>
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
 
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-blue">
-                        Intensivwochenende
-                    </span>
-                    <a href="../pdfs/course_infos/besser sehen in Nierstein bei Mainz 18.-19..04.2026.pdf"
-                        class="appointment-badge-blue inline-flex items-center no-underline">
-                        Mehr Info
-                        <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 16 7">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-            </article>
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" 
+                           rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
+
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <!-- <div class="col-span-1 md:col-start-2 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-blue-300 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base"> 11.-18. Oktober</time>
-                <h4 class="mt-0.5">Bad Wildungen</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-yellow">
-                        Intensivwochenende
-                    </span>
-                </div>
-            </article>
-        </div>
-
-        <div class="col-span-1 md:col-start-4 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-amber-100 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base"> 25.-26. Oktober</time>
-                <h4 class="mt-0.5">Nierstein bei Mainz</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-medium">
-                    Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-blue">
-                        Intensivwochenende
-                    </span>
-                    <a href="../pdfs/course_infos/25.-26.10.2025 Nierstein bei Mainz - besser sehen.pdf"
-                        class="appointment-badge-blue inline-flex items-center no-underline">
-                        Mehr Info
-                        <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 16 7">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-            </article>
-        </div>
-
-        <div class="col-span-1 md:col-start-2 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-blue-300 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base"> 31. Oktober - 02. November</time>
-                <h4 class="mt-0.5">Berlin/Bdb</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Stärken der Sehfähigkeit - wieder besser sehen in jedem Alter
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-yellow">
-                        Intensivwochenende
-                    </span>
-                    <a href="../pdfs/course_infos/Tage für die Augen 31.- 01..+ 02.11..2025.pdf"
-                        class="appointment-badge-blue inline-flex items-center no-underline">
-                        Mehr Info
-                        <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 16 7">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-            </article>
-        </div>
-        -->
-        
-         <!-- Termine cards end-->
-
-        <div class="col-span-1 md:col-start-2 md:col-span-4 text-center">
-            <span class="flex items-center">
-                <span class="h-px flex-1 bg-blue-950"></span>
-
-                <h4 class="shrink-0 px-4">Intensivwochen</h4>
-
-                <span class="h-px flex-1 bg-blue-950"></span>
-            </span>
-            <h4>Der Vormittag ist für Übungen zur Sehstärkung gedacht.</h4>
-            <h4>Am Nachmittag bleibt Zeit zu tun, was ihr gerne macht.</h4>
-        </div>
-
-        <div class="col-span-1 md:col-start-2 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-blue-300 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base">12.-17. Oktober</time>
-                <h4 class="mt-0.5">Nordhessen Herbstferien</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Bitte bei Interesse voranmelden
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-yellow">
-                        Intensivwoche
-                    </span>
-                </div>
-            </article>
-        </div>
-
-        <div class="col-span-1 md:col-start-4 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-amber-100 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base"> 19.-24. Oktober</time>
-                <h4 class="mt-0.5">Herbstferien</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Bitte bei Interesse voranmelden
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-blue">
-                        Intensivwoche
-                    </span>
-                </div>
-
-            </article>
-        </div>
-
-
-        <div class="col-span-1 md:col-start-2 md:col-span-4 text-center">
-            <span class="flex items-center">
-                <span class="h-px flex-1 bg-blue-950"></span>
-
-                <h4 class="shrink-0 px-4">Intensiv-Seh-Wochen Erwachsene und Kinder</h4>
-
-                <span class="h-px flex-1 bg-blue-950"></span>
-            </span>
-            <h4>In Planung mit Voranmeldung</h4>
-        </div>
-
-        <div class="col-span-1 md:col-start-2 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-blue-300 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base">23.-30. August</time>
-                <h4 class="mt-0.5">Ostsee</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-semibold">
-                    Bitte bei Interesse voranmelden
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-yellow">
-                        Intensivwoche
-                    </span>
-                </div>
-            </article>
-        </div>
-
-        <div class="col-span-1 md:col-start-4 md:col-span-2 m-2">
-            <article class="md:min-h-72 rounded-xl shadow-xl bg-amber-100 px-4 pt-5 md:pt-10 pb-5">
-                <time datetime="2022-10-10" class="block text-sm md:text-base"> 18.-25. Oktober</time>
-                <h4 class="mt-0.5">Ostsee</h4>
-
-                <h3 class="md:min-h-16 mt-0.5 font-medium">
-                    Herbstferien. Bitte bei Interesse voranmelden
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="appointment-badge-blue">
-                        Intensivwoche
-                    </span>
-                </div>
-
-            </article>
-        </div>
-
-        <div class="col-span-1 md:col-start-2 md:col-span-4 text-center">
-            <span class="flex items-center">
-                <span class="h-px flex-1 bg-blue-950"></span>
-
-                <h4 class="shrink-0 px-4">Sonstiges</h4>
-
-                <span class="h-px flex-1 bg-blue-950"></span>
-            </span>
-            <h4>Ab November in Berlin</h4>
-            <h4>Kinder u. Erwachsenen Folgekurse je 1,5 Stunden.</h4>
-            <h4> Weitere Infos <a class="text-sm"
-                    href="mailto:besser-sehen-s.pinter@posteo.com">besser-sehen-s.pinter@posteo.com</a></h4>
-        </div>
-
-    </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
-                        rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Einzelarbeit - Natürlich besser sehen</title>
+    <meta name="description" content="Individuelle Einzelarbeit für Kinder, Jugendliche und Erwachsene. Gezielte Übungen für besseres Sehen in Aachen, Berlin und Nordhessen.">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -12,195 +13,325 @@
 
 <body class="min-height-screen">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
-
-
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
-
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
-
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
-
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
-
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <!-- <li>
-                    Systemische Kniseologie
-                    <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
-                </li> -->
-            </ul>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
         </div>
-    </nav>
 
-    <h1 class="text-center">
-        Einzelarbeit
-    </h1>
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <div class="grid grid-cols-5 gap-5 mx-5">
-        <div class="md:col-span-1"></div>
-        <div class="col-span-full md:col-span-3">
-            <p>
-                Die Einzelarbeit empfehle ich als individuelle Möglichkeit um:
-            </p>
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-            <p>
-                auftretende Sehschwächen wieder zu stärken, z.B. wenn ein Kind immer gut gesehen hat und nach einem
-                belastenden
-                Ereignis oder Erlebnis eine Sehschwäche entsteht. Das kann ein Umzug, Schulbeginn, Schulwechsel, Verlust
-                u.a.
-                sein.
-                <br>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                das Sehen blockierende emotionale Situationen auf der Energieebene zu klären und zu lösen.
-                <br>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                nach einem Schlaganfall und einer damit verbundenen Einschränkung der Sicht eine Verbesserung zu
-                erzielen.
-                <br>
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                Schielen oder Winkelfehlsichtigkeit mit gezielten Gehirn-/Augen-Koordinationsübungen und
-                Entspannungsübungen der
-                Augenmuskeln zu beidäugigem Sehen zu verändern.
-                <br>
-                Die KlientInnen bekommen nach der Einzelarbeit ein individuelles Übungsprogramm mit nach Hause, um die
-                Arbeit
-                der jeweiligen Stunden zu integrieren und zu festigen.
-                <br>
-                Eltern bekommen ein jeweils passendes Spiel- und Übungsprogramm für ihre Kinder.
-                <br>
-                <br>
-                In Aachen, Berlin/Land Brandenburg und Nordhessen biete ich individuelle Einzelarbeit für Kinder,
-                Jugendliche
-                und Erwachsene an.
-                <br>
-                <br>
-                Termine nach Absprache unter 0163 758 00 23
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-            </p>
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="mb-4">Einzelarbeit</h1>
+            <h3>Individuelle Betreuung für Ihre persönlichen Sehbedürfnisse</h3>
         </div>
-    </div>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Introduction -->
+            <div class="bg-gradient-to-b from-amber-100 to-amber-200 border-l-4 border-green-nbs p-6 mb-8 rounded-r-lg">
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>💚 Persönlich & Effektiv:</strong> Die Einzelarbeit empfehle ich als individuelle Möglichkeit, um gezielt auf Ihre spezifischen Sehbedürfnisse einzugehen.
+                </p>
+            </div>
+
+            <!-- Main Areas Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Wann ist Einzelarbeit sinnvoll?</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <!-- Card 1 -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-green-nbs">
+                        <div class="text-4xl mb-3 text-center">👁️</div>
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs text-center">Plötzliche Sehschwäche</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Wenn ein Kind immer gut gesehen hat und nach einem belastenden Ereignis eine Sehschwäche entwickelt. Das kann ein <strong>Umzug, Schulbeginn, Schulwechsel oder Verlust</strong> sein.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-blue-nbs">
+                        <div class="text-4xl mb-3 text-center">💭</div>
+                        <h3 class="font-bold text-lg mb-3 text-blue-nbs text-center">Emotionale Blockaden</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Das Sehen blockierende <strong>emotionale Situationen</strong> auf der Energieebene klären und lösen.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-rot-nbs">
+                        <div class="text-4xl mb-3 text-center">🏥</div>
+                        <h3 class="font-bold text-lg mb-3 text-rot-nbs text-center">Nach Schlaganfall</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nach einem Schlaganfall und einer damit verbundenen <strong>Einschränkung der Sicht</strong> eine Verbesserung erzielen.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md border-t-4 border-green-nbs">
+                        <div class="text-4xl mb-3 text-center">👀</div>
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs text-center">Schielen & Fehlsichtigkeit</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            <strong>Schielen oder Winkelfehlsichtigkeit</strong> mit gezielten Gehirn-/Augen-Koordinationsübungen und Entspannungsübungen der Augenmuskeln zu beidäugigem Sehen verändern.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What You Get Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Was Sie erhalten</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="space-y-4">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                            <span class="text-green-nbs text-xl mr-2">✓</span>
+                            Individuelles Übungsprogramm
+                        </h3>
+                        <p class="text-gray-700 ml-7">
+                            Die KlientInnen bekommen nach der Einzelarbeit ein individuelles Übungsprogramm mit nach Hause, um die Arbeit der jeweiligen Stunden zu integrieren und zu festigen.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                            <span class="text-blue-nbs text-xl mr-2">✓</span>
+                            Für Kinder: Spielerisches Programm
+                        </h3>
+                        <p class="text-gray-700 ml-7">
+                            Eltern bekommen ein jeweils passendes Spiel- und Übungsprogramm für ihre Kinder, das Spaß macht und effektiv ist.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Target Groups -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Für wen?</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <div class="grid md:grid-cols-3 gap-4 text-center">
+                        <div class="p-4">
+                            <div class="text-4xl mb-2">👶</div>
+                            <h3 class="font-bold text-gray-800">Kinder</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-4xl mb-2">🧑</div>
+                            <h3 class="font-bold text-gray-800">Jugendliche</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-4xl mb-2">👨‍🦳</div>
+                            <h3 class="font-bold text-gray-800">Erwachsene</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Locations -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">📍 Standorte</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md text-center border-t-4 border-green-nbs">
+                        <h3 class="font-bold text-lg text-green-nbs mb-2">Aachen</h3>
+                        <p class="text-gray-700 text-sm">Individuelle Einzelarbeit vor Ort</p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md text-center border-t-4 border-blue-nbs">
+                        <h3 class="font-bold text-lg text-blue-nbs mb-2">Berlin/Brandenburg</h3>
+                        <p class="text-gray-700 text-sm">Termine nach Vereinbarung</p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md text-center border-t-4 border-rot-nbs">
+                        <h3 class="font-bold text-lg text-rot-nbs mb-2">Nordhessen</h3>
+                        <p class="text-gray-700 text-sm">Flexible Terminvereinbarung</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Kontakt & Termine</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <p class="text-gray-700 mb-4 text-lg">
+                            Termine nach individueller Absprache
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="tel:+491637580023" class="flex items-center text-blue-nbs font-semibold hover:underline text-lg">
+                                <span class="text-2xl mr-2">📞</span>
+                                0163 758 00 23
+                            </a>
+                            <a href="mailto:Info@NatuerlichBesserSehen.de" class="flex items-center text-blue-nbs font-semibold hover:underline text-lg">
+                                <span class="text-2xl mr-2">✉️</span>
+                                E-Mail senden
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-green-nbs to-blue-nbs text-white p-8 rounded-lg text-center shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Bereit für individuelle Betreuung?</h3>
+                <p class="mb-6">Vereinbaren Sie jetzt einen Termin für Ihre persönliche Einzelarbeit</p>
+                <a href="kontakt.html" class="inline-block bg-gradient-to-b from-amber-100 to-amber-200 text-blue-nbs px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-colors">
+                    Jetzt Termin vereinbaren
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
+
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
+                            rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
+
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/"
-                        rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>

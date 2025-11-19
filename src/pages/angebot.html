@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Unser Angebot - Natürlich besser sehen</title>
+    <meta name="description" content="Entdecken Sie unser vielfältiges Angebot: Sehtraining, Intensivwochen, Einzelarbeit, Ausbildung und Firmentraining für besseres Sehen.">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -12,234 +13,386 @@
 
 <body class="min-height-screen">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+        </div>
 
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
-
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
                 <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="mb-4">Unser Angebot</h1>
+            <h3>Vielfältige Wege zu besserem Sehen</h3>
         </div>
-    </nav>
 
-    <div class="flex flex-col gap-2 items-center justify-center mx-5 h-full">
-        <h5 class="md:text-base">Ich bin weiter für Euch/Sie da und biete zusätzlich ein Hometraining "gesundes Sehen"
-            an. Dazu bitte eine Mail an: Info@NatuerlichBesserSehen.de</h5>
-        <div class="flex flex-col md:flex-row gap-2">
-            <img src="../images/lowEnergy.jpg" class="rounded-lg shadow-lg" alt="Blockierte Energie" />
-            <img src="../images/highEnergy.jpg" class="rounded-lg shadow-lg" alt="Befreite Energie" />
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Special Announcement -->
+            <div class="bg-gradient-to-b from-amber-100 to-amber-200 border-l-4 border-green-nbs p-6 mb-8 rounded-r-lg">
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>💚 Hometraining verfügbar:</strong> Ich bin weiter für Sie da und biete zusätzlich ein Hometraining "gesundes Sehen" an. 
+                    Für mehr Informationen bitte eine Mail an: <a href="mailto:Info@NatuerlichBesserSehen.de" class="text-blue-nbs font-semibold hover:underline">Info@NatuerlichBesserSehen.de</a>
+                </p>
+            </div>
+
+            <!-- Energy Comparison -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Der Unterschied: Blockierte vs. Befreite Energie</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden border-t-4 border-rot-nbs">
+                        <img src="../images/lowEnergy.jpg" class="w-full h-64 object-contain bg-white" alt="Blockierte Energie" />
+                        <div class="p-4">
+                            <h3 class="font-bold text-center text-rot-nbs text-lg">❌ Blockierte Energie</h3>
+                            <p class="text-sm text-gray-700 text-center mt-2">Verspannungen behindern den Energiefluss</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden border-t-4 border-green-nbs">
+                        <img src="../images/highEnergy.jpg" class="w-full h-64 object-contain bg-white" alt="Befreite Energie" />
+                        <div class="p-4">
+                            <h3 class="font-bold text-center text-green-nbs text-lg">✓ Befreite Energie</h3>
+                            <p class="text-sm text-gray-700 text-center mt-2">Freier Fluss für gesundes Sehen</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Offerings -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Unsere Kursangebote</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Course Card 1 -->
+                    <a href="firmentraining.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-green-nbs">
+                        <div class="text-4xl mb-3 text-center">🏢</div>
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs text-center">Prävention am Arbeitsplatz</h3>
+                        <p class="text-gray-700 text-sm text-center">Firmentraining für gesunde Augen im Büroalltag</p>
+                    </a>
+
+                    <!-- Course Card 2 -->
+                    <a href="wochenendennbs.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-blue-nbs">
+                        <div class="text-4xl mb-3 text-center">📅</div>
+                        <h3 class="font-bold text-lg mb-3 text-blue-nbs text-center">Wochenenden NBS</h3>
+                        <p class="text-gray-700 text-sm text-center">Kompakte Wochenendkurse für besseres Sehen</p>
+                    </a>
+
+                    <!-- Course Card 3 -->
+                    <a href="intensivwochennbs.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-rot-nbs">
+                        <div class="text-4xl mb-3 text-center">🌟</div>
+                        <h3 class="font-bold text-lg mb-3 text-rot-nbs text-center">Intensivwochen NBS</h3>
+                        <p class="text-gray-700 text-sm text-center">Tiefgreifende Arbeit in einer Woche</p>
+                    </a>
+
+                    <!-- Course Card 4 -->
+                    <a href="einfuerung.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-green-nbs">
+                        <div class="text-4xl mb-3 text-center">👋</div>
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs text-center">Kennenlerntage</h3>
+                        <p class="text-gray-700 text-sm text-center">Erste Schritte ins natürliche Sehtraining</p>
+                    </a>
+
+                    <!-- Course Card 5 -->
+                    <a href="einzelarbeit.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-blue-nbs">
+                        <div class="text-4xl mb-3 text-center">👤</div>
+                        <h3 class="font-bold text-lg mb-3 text-blue-nbs text-center">Einzelarbeit</h3>
+                        <p class="text-gray-700 text-sm text-center">Individuelles Training nach Ihren Bedürfnissen</p>
+                    </a>
+
+                    <!-- Course Card 6 -->
+                    <a href="kindernbs.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-rot-nbs">
+                        <div class="text-4xl mb-3 text-center">👶</div>
+                        <h3 class="font-bold text-lg mb-3 text-rot-nbs text-center">Sehtraining für Kinder</h3>
+                        <p class="text-gray-700 text-sm text-center">Spielerisch zu besserer Sehkraft</p>
+                    </a>
+
+                    <!-- Course Card 7 -->
+                    <a href="ausbildung.html" class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md no-underline hover:shadow-xl transition-shadow border-t-4 border-green-nbs md:col-span-2">
+                        <div class="text-4xl mb-3 text-center">🎓</div>
+                        <h3 class="font-bold text-lg mb-3 text-green-nbs text-center">Ausbildung zur/m SehpädagogIn</h3>
+                        <p class="text-gray-700 text-sm text-center">Werden Sie selbst SehtrainerIn und helfen Sie anderen</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">🎥 Impressionen im Video</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <p class="text-center text-gray-600 mb-6">Spielend Akkomodieren und Sonnen und Gähnen für die Augen</p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/ZrH1OlqLPdQ"
+                            title="Spielend Akkomodieren" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Spielend Akkomodieren</h3>
+                            <p class="text-sm text-gray-600 mt-1">Übungen für flexible Augenlinsen</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/M7JK9z8zA5M"
+                            title="Sonnen und Gähnen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Sonnen und Gähnen</h3>
+                            <p class="text-sm text-gray-600 mt-1">Entspannung für müde Augen</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/VLFuOrs1Mrs"
+                            title="Sehtraining Übungen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Weitere Übungen</h3>
+                            <p class="text-sm text-gray-600 mt-1">Vielfältige Sehtraining-Methoden</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg shadow-md overflow-hidden">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/wLYm4eGurrE"
+                            title="Praxisbeispiele" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Praxisbeispiele</h3>
+                            <p class="text-sm text-gray-600 mt-1">Sehen Sie unsere Methoden in der Anwendung</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Articles Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">📰 Veröffentlichungen & Presse</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="space-y-4">
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm border-l-4 border-green-nbs">
+                        <h3 class="font-bold text-gray-800 mb-2">KingKalli Familienmagazin</h3>
+                        <p class="text-gray-700 mb-2">"Sehtraining für Kinder - Natürlich besser sehen"</p>
+                        <a href="https://kingkalli.de/sehtraining-fuer-kinder-natuerlich-besser-sehen/" 
+                           class="text-blue-nbs hover:underline text-sm font-semibold">
+                            Artikel lesen →
+                        </a>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm border-l-4 border-blue-nbs">
+                        <h3 class="font-bold text-gray-800 mb-2">Klenkes AC (Januar 2019)</h3>
+                        <p class="text-gray-700 mb-2">"Gesunder Blick in die Seele: Mit Sehtraining die Augen stärken"</p>
+                        <a href="http://www.klenkes.de/magazin/stadtgespraech/92248.gesunder-blick-in-die-seele-mit-sehtraining-die-augen-staerken.html" 
+                           class="text-blue-nbs hover:underline text-sm font-semibold">
+                            Artikel lesen →
+                        </a>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm border-l-4 border-rot-nbs">
+                        <h3 class="font-bold text-gray-800 mb-2">Körper Geist Seele Magazin</h3>
+                        <p class="text-gray-700 mb-2">"Die Augen als Spiegel der Seele"</p>
+                        <a href="https://archiv.kgsberlin.de/fileadmin/kgs-magazine/KGS201804s.pdf" 
+                           class="text-blue-nbs hover:underline text-sm font-semibold">
+                            PDF ansehen (Seite 26) →
+                        </a>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm border-l-4 border-green-nbs">
+                        <h3 class="font-bold text-gray-800 mb-2">Körper Geist Seele Magazin</h3>
+                        <p class="text-gray-700 mb-2">"Kinesiologie: Im Dialog mit dem Körper"</p>
+                        <a href="https://archiv.kgsberlin.de/fileadmin/kgs-magazine/KGS201711s.pdf" 
+                           class="text-blue-nbs hover:underline text-sm font-semibold">
+                            PDF ansehen (Seite 26) →
+                        </a>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-5 rounded-lg shadow-sm border-l-4 border-blue-nbs">
+                        <h3 class="font-bold text-gray-800 mb-2">CLIO (Mai 2017)</h3>
+                        <p class="text-gray-700 mb-2">Die Zeitschrift für Frauengesundheit - ganzheitlich, verständlich und pharma-unabhängig</p>
+                        <a href="https://www.ffgz.de/bestellen/clio-zeitschrift/inhaltsverzeichnisse/clio-84.html" 
+                           class="text-blue-nbs hover:underline text-sm font-semibold">
+                            Mehr erfahren →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-green-nbs to-blue-nbs text-white p-8 rounded-lg text-center shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Bereit für besseres Sehen?</h3>
+                <p class="mb-6">Kontaktieren Sie uns für weitere Informationen oder buchen Sie direkt einen Kurs</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="anmeldung.html" 
+                       class="inline-block bg-gradient-to-b from-amber-100 to-amber-200 text-blue-nbs px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-colors">
+                        Jetzt anmelden
+                    </a>
+                    <a href="kontakt.html" 
+                       class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-nbs transition-colors">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+
         </div>
+    </main>
 
-        <h3>Neue Kurse</h3>
-        <ul class="list-disc ml-1 pl-2">
-            <li class="my-1 link">
-                <a class="text-base" href="firmentraining.html">Prävention am Arbeitsplatz</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="wochenendennbs.html">Wochenenden NBS</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="intensivwochennbs.html">Intensivwochen NBS</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="einfuerung.html">Kennenlerntage</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="einzelarbeit.html">Einzelarbeit</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="kindernbs.html">Sehtraining für Kinder</a>
-            </li>
-            <li class="my-1 link">
-                <a class="text-base" href="ausbildung.html">Ausbildung zur/m Sehpädagogin/en</a>
-            </li>
-        </ul>
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
 
-        <h3>Impressionen im Video</h3>
-        <p>Spielend Akkomodieren und Sonnen und Gähnen für die Augen</p>
-        <iframe class="w-full h-80 md:w-1/2" src="https://www.youtube.com/embed/ZrH1OlqLPdQ"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="" data-ruffle-polyfilled="">
-        </iframe>
-        <iframe class="w-full h-80 md:w-1/2" src="https://www.youtube.com/embed/M7JK9z8zA5M"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="" data-ruffle-polyfilled="">
-        </iframe>
-        <iframe class="w-full h-80 md:w-1/2" src="https://www.youtube.com/embed/VLFuOrs1Mrs"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="" data-ruffle-polyfilled="">
-        </iframe>
-        <iframe class="w-full h-80 md:w-1/2" src="https://www.youtube.com/embed/wLYm4eGurrE"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="" data-ruffle-polyfilled="">
-        </iframe>
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
 
-        <h3>Artikel</h3>
-        <div class="text-left">
-            <p>Artikel im Familienmagazin "KingKalli"<br>
-                <a class="text-sm" ref="https://kingkalli.de/sehtraining-fuer-kinder-natuerlich-besser-sehen/">
-                    "Sehtraining für Kinder - Natürlich besser sehen"</a>
-            </p>
-            <p>"Gesunder Blick in die Seele: Mit Sehtraining die Augen stärken"
-                <a class="text-sm"
-                    ref="http://www.klenkes.de/magazin/stadtgespraech/92248.gesunder-blick-in-die-seele-mit-sehtraining-die-augen-staerken.html">
-                    Klenkes AC (Januar.2019)</a>
-            </p>
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
 
-            <p>"Die Augen als Spiegel der Seele."
-                <a class="text-sm" ref="https://archiv.kgsberlin.de/fileadmin/kgs-magazine/KGS201804s.pdf">
-                    Körper Geist Seele - Seite 26</a>
-            </p>
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
 
-            <p>"Kinesiologie: Im Dialog mit dem Körper."
-                <a class="text-sm" ref="https://archiv.kgsberlin.de/fileadmin/kgs-magazine/KGS201711s.pdf">
-                    Körper Geist Seele - Seite 26</a>
-            </p>
+                <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" 
+                           rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
 
-            <p>"Die Zeitschrift für Frauengesundheit informiert Sie umfassend, ganzheitlich, verständlich und
-                pharma-unabhängig."<br>
-                <a class="text-sm"
-                    ref="https://www.ffgz.de/bestellen/clio-zeitschrift/inhaltsverzeichnisse/clio-84.html">
-                    CLIO (Mai.2017)</a>
-            </p>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </footer>
 
 </body>
-
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
-
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/"
-                        class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
-
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
 
 </html>

@@ -4,245 +4,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natuerlich besser sehen</title>
+    <title>Kontakt & Impressum - Natürlich besser sehen</title>
+    <meta name="description" content="Kontaktieren Sie Silvia Pintér für Sehtraining und Sehpädagogik. Impressum und rechtliche Informationen.">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <script src="../scripts/navigation.js" defer></script>
 
-<body>
+<body class="min-height-screen">
 
-    <div class="text-xl font-bold my-4 text-center md:text-4xl">
-        <span class="text-green-nbs mr-2">Natürlich</span>
-        <span class="text-blue-nbs mr-2">Besser</span>
-        <span class="text-rot-nbs mr-2">Sehen</span>
-        <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
-    </div>
+    <header>
+        <div class="text-xl font-bold my-4 text-center md:text-4xl">
+            <span class="text-green-nbs mr-2">Natürlich</span>
+            <span class="text-blue-nbs mr-2">Besser</span>
+            <span class="text-rot-nbs mr-2">Sehen</span>
+            <span class="text-sm md:text-xl text-blue-nbs ml-4">Silvia Pintér</span>
+        </div>
 
+        <nav class="relative z-10 top-0">
+            <div class="w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
+                        Startseite
+                    </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
+                        Angebot
 
-    <nav class="relative z-10 top-0">
-        <div class="w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-row justify-center font-medium text-sm md:text-lg mt-4 mx-auto space-x-2 md:space-x-8">
-                <li class="menu-item cursor-pointer" onclick="window.location.href='../../index.html'">
-                    Startseite
-                </li>
-                <li class="menu-item dropdown-trigger" onclick="toggleOfferDropdown()">
-                    Angebot
+                        <div id="dropdownOffer" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
+                                </li>
+                                <li>
+                                    <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
+                                </li>
+                                <li>
+                                    <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
+                                </li>
+                                <li>
+                                    <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
+                                </li>
+                                <li>
+                                    <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
+                                </li>
+                                <li>
+                                    <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownOffer" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="angebot.html" class="block px-4 py-2 menu-link">Angebot</a>
-                            </li>
-                            <li>
-                                <a href="termine.html" class="block px-4 py-2 menu-link">Termine</a>
-                            </li>
-                            <li>
-                                <a href="kursorte.html" class="block px-4 py-2 menu-link">Kursorte</a>
-                            </li>
-                            <li>
-                                <a href="einzelarbeit.html" class="block px-4 py-2 menu-link">Einzelarbeit</a>
-                            </li>
-                            <li>
-                                <a href="ausbildung.html" class="block px-4 py-2 menu-link">Ausbildung</a>
-                            </li>
-                            <li>
-                                <a href="firmentraining.html" class="block px-4 py-2 menu-link">Firmentraining</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
+                        Über mich
+                    </li>
 
-                <li class="menu-item cursor-pointer" onclick="window.location.href='silvia-pinter.html'">
-                    Über mich
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
+                        Media
 
-                <li class="menu-item dropdown-trigger" onclick="toggleMediaDropdown()">
-                    Media
+                        <div id="dropdownMedia" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="erfahrungsberichte.html" class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
+                                </li>
+                                <li>
+                                    <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
+                                </li>
+                                <li>
+                                    <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div id="dropdownMedia" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="erfahrungsberichte.html"
-                                    class="block px-4 py-2 menu-link">Erfahrungsberichte</a>
-                            </li>
-                            <li>
-                                <a href="publikationen.html" class="block px-4 py-2 menu-link">Publikationen</a>
-                            </li>
-                            <li>
-                                <a href="presse.html" class="block px-4 py-2 menu-link">Presse</a>
-                            </li>
-                            <li>
-                                <a href="links.html" class="block px-4 py-2 menu-link">Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
+                        Kontakt
 
-                <li class="menu-item dropdown-trigger" onclick="toggleContactDropdown()">
-                    Kontakt
-
-                    <div id="dropdownContact" class="menu-dropdown">
-                        <ul class="py-2 text-sm">
-                            <li>
-                                <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
-                            </li>
-                            <li>
-                                <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
-                            </li>
-                            <li>
-                                <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                        <div id="dropdownContact" class="menu-dropdown">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="anmeldung.html" class="block px-4 py-2 menu-link">Anmeldung</a>
+                                </li>
+                                <li>
+                                    <a href="kontakt.html" class="block px-4 py-2 menu-link">Kontakt/Impressum</a>
+                                </li>
+                                <li>
+                                    <a href="../pdfs/AGB.pdf" class="block px-4 py-2 menu-link">AGB</a>
+                                </li>
+                                <li>
+                                    <a href="datenschutz.html" class="block px-4 py-2 menu-link">Datenschutz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
                 <!-- <li>
                     Systemische Kniseologie
                     <!--  <a href="www.systemische-kniseologie.net" class="block py-2 px-3 menu-link">Über mich</a>
                 </li> -->
-            </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="mb-4">Ich freue mich auf Ihre Nachricht</h1>
         </div>
-    </nav>
 
-    <div class="flex flex-col h-full m-5 text-left">
-        <h2>
-            Impressum
-        </h2>
-        <h3>
-            Angaben gemäß § 5 TMG
-        </h3>
-        <p>
-            Silvia Pintér <br>
-            Paul Robeson Str. 37 <br>
-            10439 Berlin
-        </p>
-        <h2>
-            Kontakt
-        </h2>
-        <p>
-            Telefon: 0163 758 00 23 <br>
-            E-Mail: info@natuerlichbessersehen.de
-        </p>
-        <h2>
-            EU-Streitschlichtung
-        </h2>
-        <p>
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-            <a href="https://ec.europa.eu/consumers/odr" target="_blank" class="link">https://ec.europa.eu/consumers/odr</a>.
-            <br>
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
-        </p>
-        <h2>
-            Verbraucherstreit­beilegung/Universal­schlichtungs­stelle
-        </h2>
-        <p>
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-            Verbraucherschlichtungsstelle teilzunehmen.
-        </p>
-        <h3>
-            Haftung für Inhalte
-        </h3>
-        <p>
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
-            Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
-            übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf
-            eine rechtswidrige Tätigkeit hinweisen.
-        </p>
-        <p>
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Contact Information -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">📞 Kontakt</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
 
-            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen
-            bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
-            konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
-            Inhalte umgehend entfernen.
-        </p>
-        <h3>
-            Haftung für Links
-        </h3>
-        <p>
-            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
-            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
-            Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
-            wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum
-            Zeitpunkt der Verlinkung nicht erkennbar.
-        </p>
-        <p>
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Silvia Pintér</h3>
+                        <p class="text-gray-700 font-semibold">Aktives-Seh-Zentrum A-S-Z</p>
+                        <p class="text-gray-600">Ausbildungs- und Selbsthilfe-Zentrum</p>
+                    </div>
 
-            Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
-            Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-            umgehend entfernen.
-        </p>
-        <h3>
-            Urheberrecht
-        </h3>
-        <p>
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
-            Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
-            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-            Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-        </p>
-        <p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-yellow-100 bg-opacity-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-green-nbs text-xl mr-2">📍</span>
+                                Adresse
+                            </h4>
+                            <p class="text-gray-700">
+                                Paul Robeson Str. 37<br>
+                                10439 Berlin
+                            </p>
+                        </div>
 
-            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
-            beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
-            Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
-            Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-        </p>
+                        <div class="bg-yellow-100 bg-opacity-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-blue-nbs text-xl mr-2">📞</span>
+                                Erreichbarkeit
+                            </h4>
+                            <p class="text-gray-700 mb-2">
+                                <a href="tel:+491637580023" class="text-blue-nbs hover:underline font-semibold">
+                                    0163 758 00 23
+                                </a>
+                            </p>
+                            <p class="text-gray-700">
+                                <a href="mailto:info@natuerlichbessersehen.de" class="text-blue-nbs hover:underline font-semibold">
+                                    info@natuerlichbessersehen.de
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <p>
-            Quelle: <a href="https://www.e-recht24.de/" target="_blank" class="text-xs md:text-sm hover:text-blue-800">e-recht24.de</a>
-        </p>
+            <!-- Impressum Section -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">ℹ️ Impressum</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
 
-    </div>
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-gray-800 mb-3">Angaben gemäß § 5 TMG</h3>
+                    <div class="text-gray-700 leading-relaxed">
+                        <p class="font-semibold">Silvia Pintér</p>
+                        <p>Paul Robeson Str. 37</p>
+                        <p>10439 Berlin</p>
+                    </div>
+                </div>
+            </section>
 
-</body>
+            <!-- EU Dispute Resolution -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">⚖️ EU-Streitschlichtung</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
 
-<footer class="text-blue-950">
-    <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                    </p>
+                    <p class="mb-4">
+                        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" 
+                           class="text-blue-nbs hover:underline font-semibold">
+                            https://ec.europa.eu/consumers/odr
+                        </a>
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                    </p>
+                </div>
+            </section>
 
-        <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
-            <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
-                <li>
-                    <a href="https://www.linkedin.com/in/anna-liasnikova/"
-                        class="link no-underline">© 2025 AL.</a>
-                </li>
-                <li>
-                    <a href="../pdfs/AGB.pdf" class="link">
-                        AGBs
-                    </a>
-                </li>
+            <!-- Consumer Dispute Resolution -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">Verbraucherstreitbeilegung</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
 
-                <li>
-                    <a href="datenschutz.html" class="link">
-                        Datenschutz
-                    </a>
-                </li>
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 leading-relaxed">
+                        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                    </p>
+                </div>
+            </section>
 
-                <li>
-                    <a href="kontakt.html" class="link">
-                        Impressum
-                    </a>
-                </li>
-            </ul>
+            <!-- Liability for Content -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">📄 Haftung für Inhalte</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md space-y-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Liability for Links -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">🔗 Haftung für Links</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md space-y-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <section class="mb-10">
+                <span class="flex items-center">
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                    <h2 class="shrink-0 px-4">©️ Urheberrecht</h2>
+                    <span class="h-px flex-1 bg-blue-950"></span>
+                </span>
+
+                <div class="bg-gradient-to-b from-amber-100 to-amber-200 p-6 rounded-lg shadow-md space-y-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="text-blue-950">
+        <div class="mx-auto px-4 pt-5 md:pt-10 pb-8 md:px-6">
+
+            <div class="flex items-center justify-between border-t text-xs border-blue-950 pt-8 mt-16 md:mt-24">
+                <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-xs ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anna-liasnikova/" class="link no-underline">© 2025 AL.</a>
+                    </li>
+                    <li>
+                        <a href="../pdfs/AGB.pdf" class="link">
+                            AGBs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="datenschutz.html" class="link">
+                            Datenschutz
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kontakt.html" class="link">
+                            Impressum
+                        </a>
+                    </li>
+                </ul>
 
             <ul class="hidden flex justify-center md:justify-end gap-6 mt-0 md:mt-8">
-                <li>
-                    <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" rel="noreferrer" target="_blank" class="transition hover:opacity-75">
-                        <span class="sr-only">Facebook</span>
+                    <li>
+                        <a href="https://www.facebook.com/p/Nat%C3%BCrlich-Besser-Sehen-Sehtraining-und-Sehp%C3%A4dagogik-100057475509034/" 
+                           rel="noreferrer" target="_blank" class="transition hover:opacity-75">
+                            <span class="sr-only">Facebook</span>
 
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+</body>
 
 </html>
